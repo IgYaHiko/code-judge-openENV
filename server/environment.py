@@ -1,7 +1,7 @@
 import uuid
 from models import Action, Observation, StepResult, State
 
-class CodingEnvironment:
+class CodingEnvironments:
     def __init__(self):
         self.episode_id = str(uuid.uuid4())
         self.step_count = 0

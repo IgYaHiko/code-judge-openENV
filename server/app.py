@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from models import Action
-from server.environment import CodingEnvironment
+from server.environment import CodingEnvironments
 
 app = FastAPI()
-env = CodingEnvironment()
+env = CodingEnvironments()
 
 @app.post("/reset")
 def reset():
